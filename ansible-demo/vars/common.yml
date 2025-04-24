@@ -1,2 +1,0 @@
-greeting: "Hello from {{ ansible_hostname }}!"
-file_path: "/tmp/hello_from_var.txt"
