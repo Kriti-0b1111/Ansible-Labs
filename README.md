@@ -1,43 +1,43 @@
-📘 What is Ansible?
+📘 **What is Ansible?**
 
 Ansible is an open-source automation tool used for:
 
-Configuration Management
-Application Deployment
-Provisioning Infrastructure
-Orchestration of IT tasks
+1.Configuration Management
+2.Application Deployment
+3.Provisioning Infrastructure
+4.Orchestration of IT tasks
 
 It allows you to describe your infrastructure as code, using simple YAML files called playbooks.
 
-⚙️ How Ansible Works
+⚙️ **How Ansible Works**
 
 Ansible connects to your systems (called hosts) over SSH and executes tasks remotely. It’s agentless, meaning you don’t need to install anything on the target machines.
 
-🧠 Key Concepts
+🧠 **Key Concepts**
 
-Playbook: A YAML file that defines what tasks to run on which hosts.
-Inventory: A list of target machines (can be static or dynamic).
-Task: A single action, like installing a package or restarting a service.
-Role: A structured way to organize tasks, variables, templates, and files.
-Facts: Automatic system information collected from hosts (e.g. IP, OS).
-Module:	A reusable Ansible component to perform tasks (e.g. apt, copy, user).
+1.Playbook: A YAML file that defines what tasks to run on which hosts.
+2.Inventory: A list of target machines (can be static or dynamic).
+3.Task: A single action, like installing a package or restarting a service.
+4.Role: A structured way to organize tasks, variables, templates, and files.
+5.Facts: Automatic system information collected from hosts (e.g. IP, OS).
+6.Module: A reusable Ansible component to perform tasks (e.g. apt, copy, user).
 
-🚀 Why Use Ansible?
+🚀 **Why Use Ansible?**
 
-Simple syntax (YAML)
-Agentless (no software to install on target machines)
-Works on Linux, macOS, cloud, VMs, containers
-Scales from one laptop to thousands of servers
+1.Simple syntax (YAML)
+2.Agentless (no software to install on target machines)
+3.Works on Linux, macOS, cloud, VMs, containers
+4.Scales from one laptop to thousands of servers
 
-🚀 How to Run This Ansible Project
+🚀 **How to Run This Ansible Project**
 
-📦 Prerequisites
+📦 **Prerequisites**
 
 A GitHub Codespace (Ansible installed with pip install --user ansible)
 
-Basic understanding of YAML
+**Basic understanding of YAML**
 
-🛠️ Project Structure
+🛠️ **Project Structure**
 
 ansible-demo/
 ├── inventory          # Inventory file with target hosts (e.g., localhost)
@@ -45,17 +45,15 @@ ansible-demo/
 └── vars/
     └── common.yml     # External variables file
 
-▶️ Steps to Run the Playbook
+▶️ **Steps to Run the Playbook**
 
-Open Codespace Terminal
+1.Open Codespace Terminal
+2.Use the built-in terminal in your GitHub Codespace.
+3.Run the playbook
 
-Use the built-in terminal in your GitHub Codespace.
+"ansible-playbook -i inventory playbook.yml"
 
-Run the playbook
-
-ansible-playbook -i inventory playbook.yml
-
-Expected Output
+**Expected Output**
 
 Prints a greeting message using your system hostname
 Creates a file at /tmp/hello_from_var.txt
